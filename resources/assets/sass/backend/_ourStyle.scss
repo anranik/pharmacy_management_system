@@ -1,0 +1,204 @@
+//global styles
+h1,h2,h3,h4,h5,h6,p,span,div,button{
+  font-family: 'Roboto', sans-serif !important;
+}
+
+//style for tables
+.box-body {
+  background: #e5f1fa;
+  padding: 10px;
+}
+
+table.dataTable {
+  text-align: center;
+  border: 2px solid #00a8ff !important;
+  thead:nth-child(1) tr th {
+    text-align: center;
+    background: #00a8ff !important;
+    height: 42px;
+    color: #fff;
+    border-bottom: none !important;
+  }
+  thead:nth-child(2) {
+    //display: none;
+    visibility:collapse;
+  }
+  tbody{
+    tr:nth-child(odd) {
+      background-color: #d8f2ff;
+    }
+    tr:nth-child(even) {
+      background-color: #e5f6ff;
+    }
+    tr .btn {
+      background: transparent !important;
+      border: none;
+      color: #00a8ff;
+      font-size: 17px !important;
+    }
+  }
+}
+
+
+//style for navigation
+.sidebar-menu{
+  li{
+    a{
+      i{
+        color:#5384ff;
+      }
+    }
+    &.active{
+      border-left: 5px solid #5584ff;
+      a{
+        background: #122143;
+        i{
+          color:#5384ff;
+        }
+      }
+    }
+  }
+
+}
+
+.navbar{
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.49);
+  .custom_btn_link li:hover a {
+    background: none;
+  }
+
+  .custom_btn_link{
+    li{
+      a{
+        padding-top:10px;
+        padding-bottom: 0;
+        .btn-ttp{
+          background: #5584ff;
+          color: #fff;
+          border-radius: 15px;
+          font-size: 13px;
+          transition: all .4s;
+          &:hover{
+            background: darken(#5584ff,10%);
+            transition: all .4s;
+          }
+          span{
+            top:1px;
+            font-size: 15px;
+
+          }
+        }
+      }
+    }
+  }
+
+}
+.main-header{
+  .logo{
+    background: #0e1a35 !important;
+    span{
+      color:#fff;
+    }
+  }
+  .sidebar-toggle{
+    &:hover{
+      background:transparent !important;
+      color:#5584ff !important;
+    }
+  }
+}
+
+//style for dashboard content
+
+#statistics{
+  padding-top: 20px;
+  .report_item{
+    height: 130px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    &.report_item_1{
+      background: #00a8ff;
+    }
+    &.report_item_2{
+      background: #5584ff;
+    }
+    &.report_item_3{
+      background: #4164c2;
+    }
+    &.report_item_4{
+      background: #ffc600;
+    }
+    &.report_item_5{
+      background: #ffb400;
+    }
+    &.report_item_6{
+      background: #ff9000;
+    }
+
+    h2{
+      color:#fff;
+      position: absolute;
+      left: 10px;
+      bottom: 5px;
+    }
+  }
+
+}
+
+#graphical_report{
+.report_body{
+  display: flex;
+  .item{
+    display: flex;
+  }
+}
+  .report_card,
+  .analysis_card{
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.16);
+    width: 100%;
+  }
+
+  .report_card{
+    .table-ttp{
+      thead{
+        background: #00a8ff;
+        color:#fff;
+      }
+      tbody{
+        tr{
+          &:nth-child(odd){
+            background: #fff9e5;
+          }
+          &:nth-child(even){
+            background: #fff3c9;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+//point of sales
+
+#txttotal {
+  background: transparent;
+  border: none;
+  font-size: 50px;
+  width: 100%;
+  text-align: right;
+  /* color: #1e2429; */
+}
+
+.acontainer {
+  width: 100%;
+  input {
+    height: 40px;
+  }
+}
